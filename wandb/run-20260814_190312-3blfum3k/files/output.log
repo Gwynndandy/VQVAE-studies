@@ -1,0 +1,23 @@
+196
+(196, 1, 512)
+x: torch.Size([64, 1, 512])
+y: torch.Size([64, 1, 512])
+y_hat: torch.Size([64, 1, 512])
+codes: torch.Size([64, 128])
+vq_loss: 0.018311694264411926
+Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.035043 | val 0.015468 | recon 0.009092 | vq 0.425054 | skipped 0
+Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 0.053895 | val 0.115475 | recon 0.007409 | vq 3.602213 | skipped 0
+Epoch 003 | lr 1.00e-04 | lambda_vq 0.045 | train 0.269376 | val 0.396113 | recon 0.007173 | vq 8.643106 | skipped 0
+Epoch 004 | lr 1.00e-04 | lambda_vq 0.060 | train 0.644784 | val 1.040357 | recon 0.006830 | vq 17.225448 | skipped 0
+Epoch 005 | lr 1.00e-04 | lambda_vq 0.075 | train 2.216231 | val 3.033129 | recon 0.007637 | vq 40.339888 | skipped 0
+Epoch 006 | lr 1.00e-04 | lambda_vq 0.090 | train 1.443243 | val 0.740798 | recon 0.003806 | vq 8.188794 | skipped 0
+Epoch 007 | lr 1.00e-04 | lambda_vq 0.105 | train 0.630934 | val 0.963894 | recon 0.003664 | vq 9.145052 | skipped 0
+Epoch 008 | lr 1.00e-04 | lambda_vq 0.120 | train 1.051208 | val 1.370790 | recon 0.003693 | vq 11.392471 | skipped 0
+Epoch 009 | lr 1.00e-04 | lambda_vq 0.135 | train 1.197653 | val 1.500533 | recon 0.003697 | vq 11.087679 | skipped 0
+Epoch 010 | lr 1.00e-04 | lambda_vq 0.150 | train 1.245794 | val 1.463540 | recon 0.003786 | vq 9.731692 | skipped 0
+Epoch 011 | lr 1.00e-04 | lambda_vq 0.150 | train 1.290477 | val 1.405152 | recon 0.003934 | vq 9.341455 | skipped 0
+Epoch 012 | lr 5.00e-05 | lambda_vq 0.150 | train 1.290826 | val 1.370544 | recon 0.002190 | vq 9.122362 | skipped 0
+Epoch 013 | lr 5.00e-05 | lambda_vq 0.150 | train 0.518618 | val 0.578706 | recon 0.002632 | vq 3.840497 | skipped 0
+Epoch 014 | lr 5.00e-05 | lambda_vq 0.150 | train 0.507492 | val 0.738537 | recon 0.002009 | vq 4.910184 | skipped 0
+Epoch 015 | lr 5.00e-05 | lambda_vq 0.150 | train 0.547490 | val 0.705222 | recon 0.001932 | vq 4.688598 | skipped 0
+Epoch 016 | lr 5.00e-05 | lambda_vq 0.150 | train 0.502449 | val 0.603963 | recon 0.001608 | vq 4.015706 | skipped 0

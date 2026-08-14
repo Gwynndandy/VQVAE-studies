@@ -1,0 +1,86 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.19
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.10.5
+    start_time: 1786699108
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 16
+      4: 3.10.5
+      5: 0.12.19
+      8:
+      - 1
+      - 5
+batch_size:
+  desc: null
+  value: 64
+factor:
+  desc: null
+  value: 0.5
+hid:
+  desc: null
+  value: 32
+in_ch:
+  desc: null
+  value: 1
+lr:
+  desc: null
+  value: 0.0001
+min_lr:
+  desc: null
+  value: 1.0e-05
+mode:
+  desc: null
+  value: min
+n_codes:
+  desc: null
+  value: 32
+num_epochs:
+  desc: null
+  value: 100
+patience:
+  desc: null
+  value: 10
+pulse_length:
+  desc: null
+  value: 512
+target_snr:
+  desc: null
+  value: 20
+test_length:
+  desc: null
+  value: 1000
+test_seed:
+  desc: null
+  value: 20000
+training_length:
+  desc: null
+  value: 10000
+training_seed:
+  desc: null
+  value: 0
+val_length:
+  desc: null
+  value: 1000
+val_seed:
+  desc: null
+  value: 30000
+weight_decay:
+  desc: null
+  value: 0.0001
+z_ch:
+  desc: null
+  value: 512

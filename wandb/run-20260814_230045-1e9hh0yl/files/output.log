@@ -1,0 +1,28 @@
+196
+(196, 1, 512)
+x: torch.Size([64, 1, 512])
+y: torch.Size([64, 1, 512])
+y_hat: torch.Size([64, 1, 512])
+codes: torch.Size([64, 128])
+vq_loss: 0.021820969879627228
+Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.050689 | val 0.021170 | recon 0.009836 | vq 0.755591 | skipped 0
+Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 0.055757 | val 0.072235 | recon 0.008417 | vq 2.127266 | skipped 0
+Epoch 003 | lr 1.00e-04 | lambda_vq 0.045 | train 0.122182 | val 0.149210 | recon 0.008013 | vq 3.137727 | skipped 0
+Epoch 004 | lr 1.00e-04 | lambda_vq 0.060 | train 0.253964 | val 0.366181 | recon 0.008166 | vq 5.966919 | skipped 0
+Epoch 005 | lr 1.00e-04 | lambda_vq 0.075 | train 2.533457 | val 10.877971 | recon 0.051446 | vq 144.353651 | skipped 0
+Epoch 006 | lr 1.00e-04 | lambda_vq 0.090 | train 13.925475 | val 6.774472 | recon 0.012397 | vq 75.134165 | skipped 0
+Epoch 007 | lr 1.00e-04 | lambda_vq 0.105 | train 2.723494 | val 0.491363 | recon 0.007883 | vq 4.604570 | skipped 0
+Epoch 008 | lr 1.00e-04 | lambda_vq 0.120 | train 0.284864 | val 0.180353 | recon 0.007230 | vq 1.442691 | skipped 0
+Epoch 009 | lr 1.00e-04 | lambda_vq 0.135 | train 0.170499 | val 0.149315 | recon 0.007005 | vq 1.054147 | skipped 0
+Epoch 010 | lr 1.00e-04 | lambda_vq 0.150 | train 0.120852 | val 0.077728 | recon 0.005044 | vq 0.484557 | skipped 0
+Epoch 011 | lr 1.00e-04 | lambda_vq 0.150 | train 0.091312 | val 0.113288 | recon 0.004564 | vq 0.724831 | skipped 0
+Epoch 012 | lr 5.00e-05 | lambda_vq 0.150 | train 0.128272 | val 0.173890 | recon 0.004940 | vq 1.126329 | skipped 0
+Epoch 013 | lr 5.00e-05 | lambda_vq 0.150 | train 0.180729 | val 0.229670 | recon 0.005055 | vq 1.497437 | skipped 0
+Epoch 014 | lr 5.00e-05 | lambda_vq 0.150 | train 0.231273 | val 0.293996 | recon 0.005188 | vq 1.925390 | skipped 0
+Epoch 015 | lr 5.00e-05 | lambda_vq 0.150 | train 0.297954 | val 0.378649 | recon 0.005419 | vq 2.488195 | skipped 0
+/nix/store/zpnq8bysmwjszv9y6ypwvddm2vrpqkar-python3-3.10.5-env/lib/python3.10/site-packages/plotly/matplotlylib/renderer.py:612: UserWarning:
+I found a path object that I don't think is part of a bar chart. Ignoring.
+Epoch 016 | lr 5.00e-05 | lambda_vq 0.150 | train 0.356387 | val 0.343416 | recon 0.004719 | vq 2.257979 | skipped 0
+Early stopping.
+/nix/store/zpnq8bysmwjszv9y6ypwvddm2vrpqkar-python3-3.10.5-env/lib/python3.10/site-packages/plotly/matplotlylib/renderer.py:612: UserWarning:
+I found a path object that I don't think is part of a bar chart. Ignoring.

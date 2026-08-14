@@ -1,0 +1,245 @@
+2026-08-14 23:04:41,689 INFO    MainThread:22382 [internal.py:wandb_internal():90] W&B internal server running at pid: 22382, started at: 2026-08-14 23:04:41.689030
+2026-08-14 23:04:41,690 INFO    WriterThread:22382 [datastore.py:open_for_write():75] open: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/run-1f0floxw.wandb
+2026-08-14 23:04:41,691 DEBUG   SenderThread:22382 [sender.py:send():235] send: header
+2026-08-14 23:04:41,691 DEBUG   SenderThread:22382 [sender.py:send():235] send: run
+2026-08-14 23:04:42,051 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: check_version
+2026-08-14 23:04:42,052 INFO    SenderThread:22382 [dir_watcher.py:__init__():205] watching files in: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files
+2026-08-14 23:04:42,052 INFO    SenderThread:22382 [sender.py:_start_run_threads():812] run started: 1f0floxw with start time 1786748681
+2026-08-14 23:04:42,052 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:04:42,052 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:04:42,052 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: check_version
+2026-08-14 23:04:42,180 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: run_start
+2026-08-14 23:04:42,181 DEBUG   HandlerThread:22382 [meta.py:__init__():35] meta init
+2026-08-14 23:04:42,181 DEBUG   HandlerThread:22382 [meta.py:__init__():49] meta init done
+2026-08-14 23:04:42,181 DEBUG   HandlerThread:22382 [meta.py:probe():209] probe
+2026-08-14 23:04:42,182 DEBUG   HandlerThread:22382 [meta.py:_setup_git():199] setup git
+2026-08-14 23:04:42,186 DEBUG   HandlerThread:22382 [meta.py:_setup_git():206] setup git done
+2026-08-14 23:04:42,186 DEBUG   HandlerThread:22382 [meta.py:_save_pip():53] save pip
+2026-08-14 23:04:42,186 DEBUG   HandlerThread:22382 [meta.py:_save_pip():67] save pip done
+2026-08-14 23:04:42,186 DEBUG   HandlerThread:22382 [meta.py:probe():247] probe done
+2026-08-14 23:04:42,203 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:04:42,204 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2026-08-14 23:04:42,208 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:04:42,208 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:04:42,519 DEBUG   SenderThread:22382 [sender.py:send():235] send: telemetry
+2026-08-14 23:04:42,647 INFO    Thread-11 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/1nxhz41z-wandb-metadata.json
+2026-08-14 23:04:43,054 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-metadata.json
+2026-08-14 23:04:43,056 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/requirements.txt
+2026-08-14 23:04:43,057 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:04:43,058 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:04:45,054 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:04:53,904 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:04:53,905 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:04:53,905 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:04:53,907 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:04:54,059 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:04:57,061 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:04:57,520 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:04:57,520 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:05:04,677 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:04,678 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:04,678 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:04,680 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:05,065 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:05:07,066 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:05:10,257 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:05:12,769 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:05:12,770 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:05:13,080 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/config.yaml
+2026-08-14 23:05:15,315 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:15,315 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:15,316 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:15,317 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:16,084 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:05:17,084 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:05:25,936 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:25,936 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:25,936 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:25,939 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:26,092 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:05:27,093 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:05:28,082 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:05:28,083 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:05:36,581 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:36,581 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:36,582 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:36,583 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:37,098 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:05:39,101 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:05:40,353 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:05:43,340 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:05:43,341 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:05:47,788 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:47,789 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:47,789 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:47,789 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:48,106 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:05:51,109 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:05:58,483 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:05:58,483 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:05:58,484 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:05:58,484 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:05:58,622 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:05:58,622 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:05:59,112 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:01,114 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:09,280 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:06:09,281 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:06:09,281 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:06:09,281 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:06:10,122 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:10,440 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:06:11,122 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:13,817 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:06:13,817 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:06:19,995 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:06:19,996 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:06:19,996 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:06:19,997 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:06:20,127 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:23,129 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:29,081 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:06:29,081 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:06:30,663 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:06:30,664 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:06:30,664 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:06:30,664 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:06:31,135 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:33,136 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:40,518 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:06:41,626 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:06:41,626 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:06:41,627 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:06:41,627 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:06:42,143 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:43,143 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:44,374 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:06:44,374 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:06:52,309 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:06:52,310 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:06:52,310 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:06:52,310 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:06:53,149 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:06:53,149 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:06:59,667 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:06:59,668 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:07:03,036 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:03,037 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:03,037 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:03,039 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:03,156 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:07:05,158 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:07:10,598 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:07:13,646 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:13,646 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:13,647 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:13,648 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:14,161 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:07:14,977 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:07:14,977 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:07:15,163 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:07:24,276 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:24,277 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:24,277 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:24,279 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:25,168 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:07:25,168 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:07:30,241 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:07:30,242 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:07:34,951 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:34,952 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:34,952 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:34,952 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:35,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:07:35,650 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:35,650 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:07:35,651 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file media/plotly/output_0_16_4adbba3a4f073f2f5b02.plotly.json with policy now
+2026-08-14 23:07:35,651 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:35,651 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:35,652 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:35,719 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:07:35,719 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file media/plotly/output_1_17_ca0959fb47108e179e44.plotly.json with policy now
+2026-08-14 23:07:35,719 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:35,720 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:35,720 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:35,720 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:35,791 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:07:35,791 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file media/plotly/output_2_18_f709151780c691a1cbcc.plotly.json with policy now
+2026-08-14 23:07:35,792 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:35,792 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:35,792 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:35,793 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:35,862 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:07:35,862 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file media/plotly/output_3_19_c6e47227e5e71b98d90b.plotly.json with policy now
+2026-08-14 23:07:35,867 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:35,867 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:35,867 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:35,868 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:35,936 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 23:07:35,938 DEBUG   SenderThread:22382 [sender.py:send():235] send: files
+2026-08-14 23:07:35,938 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file media/plotly/output_4_20_b0acd909d31a3e8b382a.plotly.json with policy now
+2026-08-14 23:07:35,939 DEBUG   SenderThread:22382 [sender.py:send():235] send: history
+2026-08-14 23:07:35,940 DEBUG   SenderThread:22382 [sender.py:send():235] send: summary
+2026-08-14 23:07:35,940 INFO    SenderThread:22382 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/wandb-summary.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly/output_1_17_ca0959fb47108e179e44.plotly.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly/output_0_16_4adbba3a4f073f2f5b02.plotly.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly/output_2_18_f709151780c691a1cbcc.plotly.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly/output_4_20_b0acd909d31a3e8b382a.plotly.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly/output_3_19_c6e47227e5e71b98d90b.plotly.json
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media
+2026-08-14 23:07:36,175 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/media/plotly
+2026-08-14 23:07:36,192 INFO    Thread-13 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/ek3jsgjk-media/plotly/output_1_17_ca0959fb47108e179e44.plotly.json
+2026-08-14 23:07:36,303 INFO    Thread-14 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/1huz2a4l-media/plotly/output_2_18_f709151780c691a1cbcc.plotly.json
+2026-08-14 23:07:36,319 INFO    Thread-12 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/13xmkgo7-media/plotly/output_0_16_4adbba3a4f073f2f5b02.plotly.json
+2026-08-14 23:07:36,330 INFO    Thread-15 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/1u1sb8r9-media/plotly/output_3_19_c6e47227e5e71b98d90b.plotly.json
+2026-08-14 23:07:36,403 INFO    Thread-16 :22382 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp5c_2my4nwandb/2228yxn4-media/plotly/output_4_20_b0acd909d31a3e8b382a.plotly.json
+2026-08-14 23:07:37,176 INFO    Thread-7  :22382 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_230436-1f0floxw/files/output.log
+2026-08-14 23:07:40,690 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:07:45,518 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:07:45,519 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:08:00,739 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:08:00,740 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:08:10,884 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:08:16,072 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:08:16,072 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:08:31,351 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:08:31,351 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:08:41,071 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:08:46,566 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:08:46,566 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:09:01,764 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:09:01,764 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:09:11,261 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:09:17,061 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:09:17,061 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:09:32,365 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:09:32,365 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:09:41,461 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:09:47,656 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:09:47,657 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:10:03,095 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:10:03,096 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:10:11,653 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:10:18,370 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:10:18,370 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:10:33,633 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:10:33,633 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:10:41,860 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:10:48,895 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:10:48,895 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:11:04,165 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:11:04,166 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:11:12,020 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:11:19,547 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:11:19,548 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:11:34,729 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:11:34,729 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:11:42,173 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:11:50,067 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:11:50,067 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:12:05,279 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:12:05,279 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 23:12:12,255 DEBUG   SenderThread:22382 [sender.py:send():235] send: stats
+2026-08-14 23:12:20,552 DEBUG   HandlerThread:22382 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 23:12:20,553 DEBUG   SenderThread:22382 [sender.py:send_request():249] send_request: stop_status

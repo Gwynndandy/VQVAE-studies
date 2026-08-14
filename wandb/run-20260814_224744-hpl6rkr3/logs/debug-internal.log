@@ -1,0 +1,594 @@
+2026-08-14 22:47:45,512 INFO    MainThread:19251 [internal.py:wandb_internal():90] W&B internal server running at pid: 19251, started at: 2026-08-14 22:47:45.512331
+2026-08-14 22:47:45,514 DEBUG   SenderThread:19251 [sender.py:send():235] send: header
+2026-08-14 22:47:45,514 INFO    WriterThread:19251 [datastore.py:open_for_write():75] open: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/run-hpl6rkr3.wandb
+2026-08-14 22:47:45,514 DEBUG   SenderThread:19251 [sender.py:send():235] send: run
+2026-08-14 22:47:45,866 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: check_version
+2026-08-14 22:47:45,867 INFO    SenderThread:19251 [dir_watcher.py:__init__():205] watching files in: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files
+2026-08-14 22:47:45,867 INFO    SenderThread:19251 [sender.py:_start_run_threads():812] run started: hpl6rkr3 with start time 1786747664
+2026-08-14 22:47:45,867 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:47:45,867 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:47:45,867 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: check_version
+2026-08-14 22:47:45,996 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: run_start
+2026-08-14 22:47:45,997 DEBUG   HandlerThread:19251 [meta.py:__init__():35] meta init
+2026-08-14 22:47:45,997 DEBUG   HandlerThread:19251 [meta.py:__init__():49] meta init done
+2026-08-14 22:47:45,997 DEBUG   HandlerThread:19251 [meta.py:probe():209] probe
+2026-08-14 22:47:45,998 DEBUG   HandlerThread:19251 [meta.py:_setup_git():199] setup git
+2026-08-14 22:47:46,003 DEBUG   HandlerThread:19251 [meta.py:_setup_git():206] setup git done
+2026-08-14 22:47:46,003 DEBUG   HandlerThread:19251 [meta.py:_save_pip():53] save pip
+2026-08-14 22:47:46,004 DEBUG   HandlerThread:19251 [meta.py:_save_pip():67] save pip done
+2026-08-14 22:47:46,004 DEBUG   HandlerThread:19251 [meta.py:probe():247] probe done
+2026-08-14 22:47:46,021 DEBUG   SenderThread:19251 [sender.py:send():235] send: files
+2026-08-14 22:47:46,021 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2026-08-14 22:47:46,026 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:47:46,027 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:47:46,028 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,029 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,101 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,101 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,188 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,188 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,204 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,204 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,204 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,205 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,249 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,249 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,254 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,254 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,318 DEBUG   SenderThread:19251 [sender.py:send():235] send: telemetry
+2026-08-14 22:47:46,319 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,319 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,319 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,351 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,351 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,351 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,351 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,352 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,353 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,353 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,353 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,353 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,353 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,354 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,400 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,400 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,404 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,404 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,472 INFO    Thread-11 :19251 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp4ydzzkxewandb/39nlxxxk-wandb-metadata.json
+2026-08-14 22:47:46,503 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,504 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,505 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,527 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,527 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,609 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,609 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,609 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,609 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,610 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,611 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,611 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:47:46,611 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:47:46,612 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,612 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,612 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:47:46,636 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:47:46,636 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:47:46,869 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-metadata.json
+2026-08-14 22:47:46,870 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:47:46,870 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/requirements.txt
+2026-08-14 22:47:46,870 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:47:48,869 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:47:58,436 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:47:58,437 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:47:58,437 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:47:58,439 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:47:58,875 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:00,877 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:48:01,320 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:48:01,320 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:48:10,247 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:48:10,247 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:48:10,248 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:48:10,250 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:48:10,883 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:12,885 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:48:14,720 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:48:16,851 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:48:16,851 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:48:16,887 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/config.yaml
+2026-08-14 22:48:21,799 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:48:21,800 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:48:21,800 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:48:21,802 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:48:21,890 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:24,892 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:48:32,214 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:48:32,214 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:48:33,410 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:48:33,411 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:48:33,411 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:48:33,413 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:48:33,898 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:34,899 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:48:44,798 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:48:45,165 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:48:45,165 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:48:45,166 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:48:45,166 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:48:45,912 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:46,913 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:48:47,674 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:48:47,674 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:48:56,860 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:48:56,861 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:48:56,861 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:48:56,863 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:48:56,921 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:48:58,922 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:49:02,978 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:49:02,979 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:49:08,361 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:49:08,361 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:49:08,362 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:49:08,362 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:49:08,927 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:49:10,928 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:49:14,880 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:49:18,222 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:49:18,222 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:49:19,475 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:49:19,476 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:49:19,476 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:49:19,478 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:49:19,933 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:49:20,934 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:49:30,759 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:49:30,760 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:49:30,760 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:49:30,760 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:49:30,940 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:49:32,941 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:49:33,527 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:49:33,527 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:49:41,890 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:49:41,891 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:49:41,891 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:49:41,892 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:49:41,948 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:49:44,949 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:49:44,968 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:49:48,745 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:49:48,745 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:49:53,557 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:49:53,557 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:49:53,558 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:49:53,559 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:49:53,959 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:49:54,959 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:50:03,967 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:50:03,969 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:50:04,802 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:50:04,803 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:50:04,803 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:50:04,803 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:50:04,964 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:50:06,966 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:50:15,048 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:50:16,060 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:50:16,060 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:50:16,060 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:50:16,061 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:50:16,970 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:50:16,970 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:50:19,261 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:50:19,262 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:50:27,364 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:50:27,365 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:50:27,366 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:50:27,366 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:50:27,979 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:50:28,980 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:50:34,490 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:50:34,490 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:50:38,734 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:50:38,734 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:50:38,734 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:50:38,735 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:50:38,985 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:50:40,987 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:50:45,137 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:50:49,731 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:50:49,732 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:50:50,609 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:50:50,609 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:50:50,609 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:50:50,611 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:50:50,611 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:50:50,611 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:50:50,652 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:50:50,652 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:50:50,653 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:50:50,990 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:50:51,188 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:50:51,188 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:50:51,255 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:50:51,256 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:50:51,256 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:50:51,569 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:50:51,569 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:50:51,658 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:50:52,991 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:51:04,973 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:51:04,973 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:51:20,295 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:51:20,295 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:51:25,088 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:25,088 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:25,090 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:25,091 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:25,190 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:25,190 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:25,191 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:25,191 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:25,193 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:25,195 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:27,852 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:27,852 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:27,854 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:27,854 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:27,954 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:28,861 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:28,861 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:28,863 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:28,863 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:28,963 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:32,626 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:32,626 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:32,627 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:32,627 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:32,728 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:34,683 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:34,683 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:34,740 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:34,740 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:34,785 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:35,620 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:51:35,620 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:51:37,020 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:51:41,271 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:41,271 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:41,273 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:41,273 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:41,374 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:41,883 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:41,883 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:41,884 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:41,884 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:41,986 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:43,087 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:43,088 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:43,141 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:43,141 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:43,190 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:45,025 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:51:47,739 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:51:47,740 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:51:47,791 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:51:47,791 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:51:47,842 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:51:51,002 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:51:51,003 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:52:06,233 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:52:06,233 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:52:13,085 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:13,085 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:13,143 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:13,143 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:13,187 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:15,039 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:52:19,714 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:19,714 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:19,717 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:19,717 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:19,817 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:19,817 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:19,818 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:19,818 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:19,819 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:19,819 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:20,041 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:20,041 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:20,042 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:20,042 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:20,144 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:21,488 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:52:21,488 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:52:25,774 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:25,774 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:27,586 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:27,586 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:27,679 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:36,848 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:52:36,848 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:52:42,197 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:42,197 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:42,199 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:42,199 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:42,299 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:42,299 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:42,300 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:42,300 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:42,301 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:42,301 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:42,301 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:42,301 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:42,304 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:42,304 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:42,404 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:44,358 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:44,358 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:44,359 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:44,360 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:44,461 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,234 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,234 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,237 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,237 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:46,336 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,336 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,336 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,336 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:46,337 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,338 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,555 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,555 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,557 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,557 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:46,657 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,657 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,657 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,657 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:46,658 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,659 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,786 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,786 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,789 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,789 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:46,889 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:46,937 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:46,937 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:46,939 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:46,939 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:47,039 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:48,733 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:48,733 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:48,785 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:48,785 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:48,836 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:52,121 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:52:52,121 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:52:57,148 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:52:57,148 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:52:58,935 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:52:58,935 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:52:58,953 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:52:59,066 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:53:07,426 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:53:07,426 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:53:22,685 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:53:22,685 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:53:38,011 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:53:38,011 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:53:53,216 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:53:53,217 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:54:08,781 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:54:08,782 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:54:12,216 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:12,216 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:12,316 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:12,316 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:12,318 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:24,067 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:54:24,068 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:54:25,940 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:25,941 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:25,942 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:25,942 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:26,043 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:26,816 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:26,816 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:26,818 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:26,818 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:26,918 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:27,917 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:27,917 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:27,919 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:27,919 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:28,019 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:28,083 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:28,083 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:28,084 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:28,084 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:28,185 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:28,214 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:54:28,214 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:54:28,216 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:54:28,216 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:54:28,316 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:54:39,417 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:54:39,417 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:54:54,639 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:54:54,639 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:55:06,024 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:55:06,024 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:55:06,211 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:55:06,211 DEBUG   SenderThread:19251 [sender.py:send():235] send: files
+2026-08-14 22:55:06,211 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:55:06,212 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file media/plotly/output_16_0787aa28eb39a90ad516.plotly.json with policy now
+2026-08-14 22:55:06,212 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:55:06,212 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:55:06,212 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:55:06,213 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:55:06,227 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:55:06,736 INFO    Thread-58 :19251 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp4ydzzkxewandb/2bggvicy-media/plotly/output_16_0787aa28eb39a90ad516.plotly.json
+2026-08-14 22:55:07,124 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:55:07,124 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly/output_16_0787aa28eb39a90ad516.plotly.json
+2026-08-14 22:55:07,124 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media
+2026-08-14 22:55:07,124 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly
+2026-08-14 22:55:09,125 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:55:09,936 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:55:09,936 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:55:25,221 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:55:25,221 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:55:40,482 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:55:40,482 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:55:55,673 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:55:55,674 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:56:10,884 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:56:10,884 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:56:17,472 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:56:17,472 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:56:17,580 DEBUG   SenderThread:19251 [sender.py:send():235] send: files
+2026-08-14 22:56:17,580 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file media/plotly/output_17_8682ba9db6b4df3626b9.plotly.json with policy now
+2026-08-14 22:56:17,580 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: partial_history
+2026-08-14 22:56:17,581 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:56:17,581 DEBUG   SenderThread:19251 [sender.py:send():235] send: history
+2026-08-14 22:56:17,581 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:56:17,581 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:56:17,585 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:56:17,674 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:56:18,053 INFO    Thread-60 :19251 [upload_job.py:push():132] Uploaded file /tmp/nix-shell-14629-3160094186/tmp4ydzzkxewandb/38odqupz-media/plotly/output_17_8682ba9db6b4df3626b9.plotly.json
+2026-08-14 22:56:18,162 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:56:18,163 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_created():256] file/dir created: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly/output_17_8682ba9db6b4df3626b9.plotly.json
+2026-08-14 22:56:18,163 INFO    Thread-7  :19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly
+2026-08-14 22:56:26,151 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: stop_status
+2026-08-14 22:56:26,151 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: stop_status
+2026-08-14 22:56:33,396 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:56:33,396 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:56:33,397 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:56:33,397 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:56:33,499 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:56:33,499 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:56:33,499 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: pause
+2026-08-14 22:56:33,499 INFO    HandlerThread:19251 [handler.py:handle_request_pause():695] stopping system metrics thread
+2026-08-14 22:56:33,500 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: resume
+2026-08-14 22:56:33,500 INFO    HandlerThread:19251 [handler.py:handle_request_resume():686] starting system metrics thread
+2026-08-14 22:56:33,501 DEBUG   SenderThread:19251 [sender.py:send():235] send: telemetry
+2026-08-14 22:56:33,501 DEBUG   SenderThread:19251 [sender.py:send():235] send: telemetry
+2026-08-14 22:56:33,501 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:56:33,501 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:56:33,780 DEBUG   SenderThread:19251 [sender.py:send():235] send: exit
+2026-08-14 22:56:33,780 INFO    SenderThread:19251 [sender.py:send_exit():371] handling exit code: 0
+2026-08-14 22:56:33,780 INFO    SenderThread:19251 [sender.py:send_exit():373] handling runtime: 192
+2026-08-14 22:56:33,780 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:33,781 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:56:33,781 INFO    SenderThread:19251 [sender.py:send_exit():379] send defer
+2026-08-14 22:56:33,781 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:33,781 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,781 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 0
+2026-08-14 22:56:33,781 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,781 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 0
+2026-08-14 22:56:33,781 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 1
+2026-08-14 22:56:33,781 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,781 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 1
+2026-08-14 22:56:33,803 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,803 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 1
+2026-08-14 22:56:33,803 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 2
+2026-08-14 22:56:33,803 DEBUG   SenderThread:19251 [sender.py:send():235] send: stats
+2026-08-14 22:56:33,803 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,803 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 2
+2026-08-14 22:56:33,803 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 2
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 3
+2026-08-14 22:56:33,804 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,804 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 3
+2026-08-14 22:56:33,804 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 3
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 4
+2026-08-14 22:56:33,804 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,804 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 4
+2026-08-14 22:56:33,804 DEBUG   SenderThread:19251 [sender.py:send():235] send: summary
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2026-08-14 22:56:33,804 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 4
+2026-08-14 22:56:33,804 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 5
+2026-08-14 22:56:33,805 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:33,805 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 5
+2026-08-14 22:56:33,805 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:33,805 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 5
+2026-08-14 22:56:33,884 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,077 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 6
+2026-08-14 22:56:34,077 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,078 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:34,078 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 6
+2026-08-14 22:56:34,078 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:34,078 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 6
+2026-08-14 22:56:34,078 INFO    SenderThread:19251 [dir_watcher.py:finish():336] shutting down directory watcher
+2026-08-14 22:56:34,167 INFO    SenderThread:19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/config.yaml
+2026-08-14 22:56:34,167 INFO    SenderThread:19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():366] scan: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/requirements.txt requirements.txt
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-metadata.json wandb-metadata.json
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/config.yaml config.yaml
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log output.log
+2026-08-14 22:56:34,168 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json wandb-summary.json
+2026-08-14 22:56:34,176 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly/output_17_8682ba9db6b4df3626b9.plotly.json media/plotly/output_17_8682ba9db6b4df3626b9.plotly.json
+2026-08-14 22:56:34,176 INFO    SenderThread:19251 [dir_watcher.py:finish():380] scan save: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/media/plotly/output_16_0787aa28eb39a90ad516.plotly.json media/plotly/output_16_0787aa28eb39a90ad516.plotly.json
+2026-08-14 22:56:34,177 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 7
+2026-08-14 22:56:34,177 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:34,177 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 7
+2026-08-14 22:56:34,177 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:34,177 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 7
+2026-08-14 22:56:34,177 INFO    SenderThread:19251 [file_pusher.py:finish():145] shutting down file pusher
+2026-08-14 22:56:34,178 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,178 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,280 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,280 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,381 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,381 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,483 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,485 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,587 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,587 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,614 INFO    Thread-66 :19251 [upload_job.py:push():132] Uploaded file /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/output.log
+2026-08-14 22:56:34,622 INFO    Thread-64 :19251 [upload_job.py:push():132] Uploaded file /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/requirements.txt
+2026-08-14 22:56:34,636 INFO    Thread-67 :19251 [upload_job.py:push():132] Uploaded file /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/wandb-summary.json
+2026-08-14 22:56:34,689 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,689 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,728 INFO    Thread-65 :19251 [upload_job.py:push():132] Uploaded file /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/files/config.yaml
+2026-08-14 22:56:34,791 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,791 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,893 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:34,893 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:34,929 INFO    Thread-6 (_thread_body):19251 [sender.py:transition_state():392] send defer: 8
+2026-08-14 22:56:34,929 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:34,929 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 8
+2026-08-14 22:56:34,929 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:34,929 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 8
+2026-08-14 22:56:34,994 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:35,419 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 9
+2026-08-14 22:56:35,419 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:35,420 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:35,420 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 9
+2026-08-14 22:56:35,420 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:35,420 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 9
+2026-08-14 22:56:35,420 INFO    SenderThread:19251 [sender.py:transition_state():392] send defer: 10
+2026-08-14 22:56:35,421 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: defer
+2026-08-14 22:56:35,421 DEBUG   SenderThread:19251 [sender.py:send():235] send: final
+2026-08-14 22:56:35,421 INFO    HandlerThread:19251 [handler.py:handle_request_defer():164] handle defer: 10
+2026-08-14 22:56:35,421 DEBUG   SenderThread:19251 [sender.py:send():235] send: footer
+2026-08-14 22:56:35,421 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: defer
+2026-08-14 22:56:35,421 INFO    SenderThread:19251 [sender.py:send_request_defer():388] handle sender defer: 10
+2026-08-14 22:56:35,521 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: poll_exit
+2026-08-14 22:56:35,522 DEBUG   SenderThread:19251 [sender.py:send_request():249] send_request: poll_exit
+2026-08-14 22:56:35,522 INFO    SenderThread:19251 [file_pusher.py:join():150] waiting for file pusher
+2026-08-14 22:56:35,909 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: sampled_history
+2026-08-14 22:56:35,910 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: get_summary
+2026-08-14 22:56:35,910 DEBUG   HandlerThread:19251 [handler.py:handle_request():141] handle_request: shutdown
+2026-08-14 22:56:35,910 INFO    HandlerThread:19251 [handler.py:finish():806] shutting down handler
+2026-08-14 22:56:36,421 INFO    WriterThread:19251 [datastore.py:close():279] close: /home/maniacalm/bin/VQVAE_studies/wandb/run-20260814_224744-hpl6rkr3/run-hpl6rkr3.wandb
+2026-08-14 22:56:36,807 INFO    SenderThread:19251 [sender.py:finish():1111] shutting down sender
+2026-08-14 22:56:36,808 INFO    SenderThread:19251 [file_pusher.py:finish():145] shutting down file pusher
+2026-08-14 22:56:36,808 INFO    SenderThread:19251 [file_pusher.py:join():150] waiting for file pusher
+2026-08-14 22:56:36,809 INFO    MainThread:19251 [internal.py:handle_exit():80] Internal process exited
