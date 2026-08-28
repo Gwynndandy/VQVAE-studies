@@ -1,9 +1,0 @@
-196
-(196, 1, 512)
-x: torch.Size([64, 1, 512])
-y: torch.Size([64, 1, 512])
-y_hat: torch.Size([64, 1, 512])
-codes: torch.Size([64, 128])
-vq_loss: 0.01999903842806816
-Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.033195 | val 0.016387 | recon 0.008988 | vq 0.493272 | skipped 0
-Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 0.088415 | val 0.225842 | recon 0.007348 | vq 7.283112 | skipped 0
