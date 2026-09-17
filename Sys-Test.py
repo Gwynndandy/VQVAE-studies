@@ -97,3 +97,21 @@ test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
 
 batch = next(iter(train_loader))
 batch["x"].shape, batch["y"].shape
+
+x = batch["x"].to(device)
+y = batch["y"].to(device)
+
+noisy = x[idx, 0].cpu().numpy()
+clean = y[idx, 0].cpu().numpy()
+
+fig, ax = plt.subplots(figsize=(12, 4))
+
+ax.plot(clean, label="clean target", linewidth=2)
+ax.plot(noisy, label="noisy input", alpha=0.6)
+
+ax.legend()
+ax.grid(True)
+fig.tight_layout()
+
+run.log({f"output_{idx}": fig})
+plt.close(fig)
