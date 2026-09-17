@@ -87,31 +87,33 @@ with wandb.init(project=project, config=config) as run:
         run.log({"accuracy": acc, "loss": loss})
 
 
-train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
-val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
-test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
+    train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
+    val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
+    test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
 
-train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
-val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
-test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
+    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
+    test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
 
-batch = next(iter(train_loader))
-batch["x"].shape, batch["y"].shape
+    batch = next(iter(train_loader))
+    batch["x"].shape, batch["y"].shape
 
-x = batch["x"].to(device)
-y = batch["y"].to(device)
+    x = batch["x"].to(device)
+    y = batch["y"].to(device)
 
-noisy = x[idx, 0].cpu().numpy()
-clean = y[idx, 0].cpu().numpy()
+    idx=0
 
-fig, ax = plt.subplots(figsize=(12, 4))
+    noisy = x[idx, 0].cpu().numpy()
+    clean = y[idx, 0].cpu().numpy()
 
-ax.plot(clean, label="clean target", linewidth=2)
-ax.plot(noisy, label="noisy input", alpha=0.6)
+    fig, ax = plt.subplots(figsize=(12, 4))
 
-ax.legend()
-ax.grid(True)
-fig.tight_layout()
+    ax.plot(clean, label="clean target", linewidth=2)
+    ax.plot(noisy, label="noisy input", alpha=0.6)
 
-run.log({f"output_{idx}": fig})
-plt.close(fig)
+    ax.legend()
+    ax.grid(True)
+    fig.tight_layout()
+
+    run.log({f"output_{idx}": fig})
+    plt.close(fig)

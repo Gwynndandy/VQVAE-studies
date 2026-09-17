@@ -19,7 +19,7 @@ class simulacra_dataset(Dataset):
             seed (int): The seed for the data
             pulse_length (int): The length of samples
         """
-        self.target_snr = target_snrbat
+        self.target_snr = target_snr
         self.length = length
         self.seed = seed
         self.pulse_length = pulse_length
