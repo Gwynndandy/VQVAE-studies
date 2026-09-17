@@ -38,7 +38,7 @@ weight_decay=1e-4
 #lr_scheduler
 mode="min"
 factor=0.5
-patience=15
+patience=5
 min_lr=1e-5
 
 #training
@@ -50,7 +50,7 @@ run = wandb.init(
     # Set the wandb entity where your project will be logged (generally your team name).
     entity="gwyndandy-niu",
     # Set the wandb project where this run will be logged.
-    project="VAE Init Testing",
+    project="ROI Init Testing",
     # Track hyperparameters and run metadata.
     config={
         #dataloader
@@ -107,9 +107,9 @@ config = f"""dataloader
 print("Config:")
 print(config)
 
-train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
-val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
-test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
+train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length,roi=True)
+val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length,roi=True)
+test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length,roi=True)
 
 train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
 val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
@@ -119,36 +119,41 @@ batch = next(iter(train_loader))
 batch["x"].shape, batch["y"].shape
 
 time_periods = 200
-class autoencoder(nn.Module):
+time_periods = 200
+class disciminator(nn.Module):
     def __init__(self, ):
         super().__init__()
         self.net = nn.Sequential(
-            nn.Conv1d(1, 16, kernel_size = 3, stride=2, padding=1),
+            nn.Conv1d(1, 16, kernel_size=3, stride=2),
             nn.ReLU(inplace=True),
-            nn.Conv1d(16, 32, kernel_size = 5, stride=4, padding=1),
-            nn.ReLU(inplace=True),
-            nn.Conv1d(32, 64, kernel_size = 9, stride=5, padding=1),
-            nn.ReLU(inplace=True),
+            nn.MaxPool1d(kernel_size=2),
 
-            nn.ConvTranspose1d(64, 32, kernel_size = 9, stride=5, padding=1, output_padding=1),
+            nn.Conv1d(16, 32, kernel_size=5, stride=2),
             nn.ReLU(inplace=True),
-            nn.ConvTranspose1d(32, 16, kernel_size = 5, stride=4, padding=1, output_padding=1),
-            nn.ReLU(inplace=True),
-            nn.ConvTranspose1d(16, 1, kernel_size = 3, stride=2, padding=1, output_padding=1),
-            nn.ReLU(inplace=True),
+            nn.MaxPool1d(kernel_size=2),
+            nn.Dropout(p=0.1),
 
-            nn.ConvTranspose1d(1, 1, kernel_size = 3, stride=2, padding=1, output_padding=1),
-            nn.Upsample(size=200, mode='linear', align_corners=False)
-        )
+            nn.Conv1d(32, 64, kernel_size=9, stride=1), 
+            nn.ReLU(inplace=True),
+            nn.AdaptiveMaxPool1d(1),
+            nn.Dropout(p=0.2),
+
+            nn.Flatten(), 
+            )
+        self.fc = nn.Linear(64, 1)      
+
     def init_weights(m):
         if isinstance(m, (nn.Conv1d, nn.ConvTranspose1d)):
             nn.init.kaiming_uniform_(m.weight, nonlinearity='relu')
             if m.bias is not None:
                 nn.init.zeros_(m.bias)
-    def forward(self, x):
-        return self.net(x)
 
-model = autoencoder().to(device)
+    def forward(self, x):
+        x = self.net(x)
+        x = self.fc(x)
+        return torch.sigmoid(x)
+
+model = disciminator().to(device)
 
 print(model)
 batch = next(iter(train_loader))
@@ -284,21 +289,3 @@ y = batch["y"].to(device)
 
 with torch.no_grad():
     y_hat = model(x)
-
-for idx in range(5):
-    noisy = x[idx, 0].cpu().numpy()
-    clean = y[idx, 0].cpu().numpy()
-    pred = y_hat[idx, 0].cpu().numpy()
-
-    fig, ax = plt.subplots(figsize=(12, 4))
-
-    ax.plot(clean, label="clean target", linewidth=2)
-    ax.plot(noisy, label="noisy input", alpha=0.6)
-    ax.plot(pred, label="VAE output", linewidth=2)
-
-    ax.legend()
-    ax.grid(True)
-    fig.tight_layout()
-
-    run.log({f"output_{idx}": fig})
-    plt.close(fig)

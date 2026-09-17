@@ -91,6 +91,8 @@ run = wandb.init(
         'num_epochs':num_epochs,
     },
 )
+#Set run name
+run.name = f"SNR:{target_snr}-Run:{run.id}"
 
 config = f"""dataloader
         target_snr:{target_snr}

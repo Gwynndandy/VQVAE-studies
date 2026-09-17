@@ -9,18 +9,17 @@ def get_gaussian(mu,sigma,pulse_length):
     return np.exp(a) / (sigma * np.sqrt(2 * np.pi))
 
 class simulacra_dataset(Dataset):
-    """simulacra of simulated data of neutrinos dataset."""
+    """simulacra of simulated data for DUNE low energy neutrino detection"""
 
     def __init__(self, target_snr, length, seed, pulse_length):
         """
         Arguments:
-            csv_file (string): Path to the csv file with annotations.
-            root_dir (string): Directory with all the images.
-            transform (callable, optional): Optional transform to be applied
-                on a sample.
+            target_snr (float): The Signal-to-Noise as ratio of root-mean-squared of both signal and noise
+            length (int): Number of simulated samples in the dataset
+            seed (int): The seed for the data
+            pulse_length (int): The length of samples
         """
-        
-        self.target_snr = target_snr
+        self.target_snr = target_snrbat
         self.length = length
         self.seed = seed
         self.pulse_length = pulse_length

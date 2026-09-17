@@ -23,16 +23,20 @@ values=(
 0.01
 )
 
+NUM_RUNS=3
 for value in "${values[@]}"; do
     echo
     echo "========================================"
-    echo "Running VQ-VAE.py with value: $value"
+    echo "Training models with value: $value"
     echo "========================================"
 
-    #python VQ-VAE.py "$value"
-    python VTB.py "$value"
+    for ((i=1; i<=NUM_RUNS; i++)); do
+        echo "Run $i/$NUM_RUNS for value: $value"
 
-
+        python VQ-VAE.py "$value"
+        python VTB.py "$value"
+        #python VTB-ROI-Finder.py "$value"
+    done
 done
 
 echo
