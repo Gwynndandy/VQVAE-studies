@@ -1,0 +1,15 @@
+'target_snr': 100
+'target_snr': 100
+'target_snr': 51.79
+'target_snr': 26.83
+'target_snr': 13.89
+'target_snr': 7.20
+'target_snr': 3.73
+'target_snr': 1.93
+'target_snr': 1.00
+'target_snr': 0.8
+'target_snr': 0.7
+'target_snr': 0.6
+'target_snr': 0.518
+'target_snr': 0.268
+'target_snr': 0.139

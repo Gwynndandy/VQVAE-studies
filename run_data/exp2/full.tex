@@ -1,0 +1,48 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{geometry}%
+\geometry{tmargin=1cm,lmargin=10cm}%
+\usepackage{tikz}%
+\usepackage{pgfplots}%
+\pgfplotsset{compat=newest}%
+\usepackage{subcaption}%
+\usepackage{graphicx}%
+%
+%
+%
+\begin{document}%
+\normalsize%
+\section{Plots:}%
+\label{sec:Plots}%
+\subsection{SNR 0.6}%
+\label{subsec:SNR0.6}%
+\begin{tikzpicture}%
+\begin{axis}[height=4cm, width=6cm, grid=major]%
+\addplot coordinates {%
+(0.016220510005950928,0.025864508002996445)%
+(0.015050498768687248,0.019779859110713005)%
+};%
+%
+\addlegendentry{estimate}%
+\end{axis}%
+\end{tikzpicture}%
+
+
+\begin{figure}[h!]%
+\begin{subfigure}[b]{0.45\linewidth}%
+\includegraphics[width=\linewidth]{/home/maniacalm/bin/VQVAE_studies/run_data/exp2/SNR:0.6-Run:325b6df0/output_0.png}%
+\caption{325b6df0}%
+\end{subfigure}%
+\begin{subfigure}[b]{0.45\linewidth}%
+\includegraphics[width=\linewidth]{/home/maniacalm/bin/VQVAE_studies/run_data/exp2/SNR:0.6-Run:1vlw2hrw/output_0.png}%
+\caption{1vlw2hrw}%
+\end{subfigure}%
+\caption{Two kittens}%
+\end{figure}
+
+%
+\end{document}

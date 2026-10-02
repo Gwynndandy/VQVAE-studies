@@ -25,9 +25,15 @@ try:
 except FileNotFoundError:
     print("Either filepath is wrong or this is ran on another computer")
 
+
+if len(sys.argv) != 3:
+    print("ERROR: invalid number of inputs!")
+    print(f"Please enter: python {sys.argv[0]} SNR Training_set_length")
+    sys.exit(1)
+
 #dataloader
 target_snr, pulse_length = float(sys.argv[1]),200
-training_length,test_length,val_length = 10000,1000,1000
+training_length,test_length,val_length = float(sys.argv[2]),float(sys.argv[2])/10,float(sys.argv[2])/10
 training_seed,test_seed,val_seed = 0,training_length*2,training_length*3
 batch_size = 64
 
@@ -44,15 +50,7 @@ min_lr=1e-5
 #training
 num_epochs = 100
 
-
-# Start a new wandb run to track this script.
-run = wandb.init(
-    # Set the wandb entity where your project will be logged (generally your team name).
-    entity="gwyndandy-niu",
-    # Set the wandb project where this run will be logged.
-    project="ROI Init Testing",
-    # Track hyperparameters and run metadata.
-    config={
+config={
         #dataloader
         'target_snr':target_snr,
         'pulse_length':pulse_length,
@@ -76,7 +74,16 @@ run = wandb.init(
 
         #training
         'num_epochs':num_epochs,
-    },
+        }
+
+# Start a new wandb run to track this script.
+run = wandb.init(
+    # Set the wandb entity where your project will be logged (generally your team name).
+    entity="gwyndandy-niu",
+    # Set the wandb project where this run will be logged.
+    project="ROI Init Testing",
+    # Track hyperparameters and run metadata.
+    config=config
 )
 #Set run name
 run.name = f"SNR:{target_snr}-Run:{run.id}"

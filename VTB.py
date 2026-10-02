@@ -25,9 +25,14 @@ try:
 except FileNotFoundError:
     print("Either filepath is wrong or this is ran on another computer")
 
+if len(sys.argv) != 3:
+    print("ERROR: invalid number of inputs!")
+    print(f"Please enter: python {sys.argv[0]} SNR Training_set_length")
+    sys.exit(1)
+
 #dataloader
 target_snr, pulse_length = float(sys.argv[1]),200
-training_length,test_length,val_length = 10000,1000,1000
+training_length,test_length,val_length = float(sys.argv[2]),float(sys.argv[2])/10,float(sys.argv[2])/10
 training_seed,test_seed,val_seed = 0,training_length*2,training_length*3
 batch_size = 64
 
