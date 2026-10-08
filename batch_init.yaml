@@ -1,12 +1,12 @@
 'dataloader':
   'target_snr':  1
   'pulse_length':  512
-  'training_length':  10000
-  'test_length':  100
-  'val_length': 100
+  'training_length':  100000
+  'test_length':  1000
+  'val_length': 1000
   'training_seed': 0
-  'test_seed': 1000
-  'val_seed': 100000
+  'test_seed': 1000000
+  'val_seed': 10000000
   'batch_size': 64
 
 'model':

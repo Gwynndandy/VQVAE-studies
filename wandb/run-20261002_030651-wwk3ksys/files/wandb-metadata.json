@@ -1,0 +1,32 @@
+{
+  "os":  "Linux-5.14.0-611.13.1.el9_7.x86_64-x86_64-with-glibc2.34",
+  "python":  "CPython 3.9.23",
+  "startedAt":  "2026-10-02T08:06:51.572937Z",
+  "args":  [
+    "batch.yaml",
+    "./run_data/flattops_init"
+  ],
+  "program":  "/home/kanderso/VQVAE-studies/VQ_VAE.py",
+  "codePath":  "VQ_VAE.py",
+  "codePathLocal":  "VQ_VAE.py",
+  "git":  {
+    "remote":  "git@github.com:Gwynndandy/VQVAE-studies.git",
+    "commit":  "d69d86dfc34b8f76e6fc2fa17851feb77ccbbdb0"
+  },
+  "email":  "gwyndandy@gmail.com",
+  "root":  "/home/kanderso/VQVAE-studies",
+  "host":  "isc01.fnal.gov",
+  "executable":  "/home/kanderso/venv/bin/python",
+  "cpu_count":  32,
+  "cpu_count_logical":  64,
+  "disk":  {
+    "/":  {
+      "total":  "214651891712",
+      "used":  "90231463936"
+    }
+  },
+  "memory":  {
+    "total":  "540340203520"
+  },
+  "writerId":  "86b2ysz70qtk11d33an70dhee1yunvnl"
+}

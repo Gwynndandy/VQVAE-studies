@@ -1,0 +1,36 @@
+'target_snr': 40
+     'n_codes': 27.3093
+     'n_codes': 22.8287
+     'n_codes': 20.7675
+     'n_codes': 17.7528
+     'n_codes': 16.6526
+'target_snr': 5
+     'n_codes': 31.6999
+     'n_codes': 27.947
+     'n_codes': 27.1349
+     'n_codes': 25.1844
+     'n_codes': 22.9127
+'target_snr': 1
+     'n_codes': 27.1023
+     'n_codes': 25.164
+     'n_codes': 24.149
+'target_snr': 1
+     'n_codes': 26.8392
+     'n_codes': 21.9874
+     'n_codes': 18.0629
+     'n_codes': 15.8817
+     'n_codes': 15.1859
+'target_snr': 0.5
+     'n_codes': 29.3343
+     'n_codes': 27.9941
+     'n_codes': 27.7409
+     'n_codes': 24.3518
+     'n_codes': 22.1703
+'target_snr': 0.1
+     'n_codes': 30.5379
+'target_snr': 0.1
+     'n_codes': 28.7759
+     'n_codes': 27.6989
+     'n_codes': 22.915
+     'n_codes': 22.8172
+     'n_codes': 19.4204

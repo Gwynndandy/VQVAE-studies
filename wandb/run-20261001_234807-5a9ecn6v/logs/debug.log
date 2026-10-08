@@ -1,0 +1,21 @@
+2026-10-01 23:48:07,448 INFO    MainThread:1014835 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/kanderso/VQVAE-studies/wandb/run-20261001_234807-5a9ecn6v/logs/debug.log
+2026-10-01 23:48:07,448 INFO    MainThread:1014835 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/kanderso/VQVAE-studies/wandb/run-20261001_234807-5a9ecn6v/logs/debug-internal.log
+2026-10-01 23:48:07,449 INFO    MainThread:1014835 [wandb_init.py:init():850] calling init triggers
+2026-10-01 23:48:07,449 INFO    MainThread:1014835 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'epochs': 10, 'lr': 0.01, '_wandb': {}}
+2026-10-01 23:48:07,449 INFO    MainThread:1014835 [wandb_init.py:init():898] starting backend
+2026-10-01 23:48:07,449 INFO    MainThread:1014835 [wandb_init.py:init():913] sending inform_init request
+2026-10-01 23:48:07,646 INFO    MainThread:1014835 [wandb_init.py:init():918] backend started and connected
+2026-10-01 23:48:07,648 INFO    MainThread:1014835 [wandb_init.py:init():988] updated telemetry
+2026-10-01 23:48:07,669 INFO    MainThread:1014835 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-10-01 23:48:07,968 INFO    MainThread:1014835 [wandb_init.py:init():1056] starting run threads in backend
+2026-10-01 23:48:08,034 INFO    MainThread:1014835 [wandb_run.py:_console_start():2554] atexit reg
+2026-10-01 23:48:08,034 INFO    MainThread:1014835 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-10-01 23:48:08,034 INFO    MainThread:1014835 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-10-01 23:48:08,035 INFO    MainThread:1014835 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-10-01 23:48:08,036 INFO    MainThread:1014835 [wandb_init.py:init():1094] run started, returning control to user process
+2026-10-01 23:48:08,041 INFO    MainThread:1014835 [wandb_run.py:_finish():2321] finishing run gwyndandy-niu/my-awesome-project/5a9ecn6v
+2026-10-01 23:48:08,041 INFO    MainThread:1014835 [wandb_run.py:_atexit_cleanup():2520] got exitcode: 0
+2026-10-01 23:48:08,041 INFO    MainThread:1014835 [wandb_run.py:_restore():2502] restore
+2026-10-01 23:48:08,041 INFO    MainThread:1014835 [wandb_run.py:_restore():2508] restore done
+2026-10-01 23:48:08,809 INFO    MainThread:1014835 [wandb_run.py:_footer_sync_info():3889] logging synced files

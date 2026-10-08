@@ -1,0 +1,102 @@
+Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.218301 | val 0.615989 | recon 0.001964 | vq 40.935014 | skipped 0
+Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 0.528319 | val 0.612138 | recon 0.001865 | vq 20.342439 | skipped 0
+Epoch 003 | lr 1.00e-04 | lambda_vq 0.045 | train 0.267427 | val 0.065291 | recon 0.001027 | vq 1.428088 | skipped 0
+Epoch 004 | lr 1.00e-04 | lambda_vq 0.060 | train 0.094568 | val 0.257735 | recon 0.001200 | vq 4.275580 | skipped 0
+Epoch 005 | lr 1.00e-04 | lambda_vq 0.075 | train 0.055423 | val 0.022528 | recon 0.000850 | vq 0.289030 | skipped 0
+Epoch 006 | lr 1.00e-04 | lambda_vq 0.090 | train 0.010606 | val 0.005300 | recon 0.000620 | vq 0.052000 | skipped 0
+Epoch 007 | lr 1.00e-04 | lambda_vq 0.105 | train 0.005139 | val 0.005750 | recon 0.000678 | vq 0.048300 | skipped 0
+Epoch 008 | lr 1.00e-04 | lambda_vq 0.120 | train 0.005201 | val 0.003051 | recon 0.000623 | vq 0.020231 | skipped 0
+Epoch 009 | lr 1.00e-04 | lambda_vq 0.135 | train 0.003350 | val 0.003427 | recon 0.000616 | vq 0.020824 | skipped 0
+Epoch 010 | lr 1.00e-04 | lambda_vq 0.150 | train 0.003309 | val 0.002711 | recon 0.000597 | vq 0.014094 | skipped 0
+Epoch 011 | lr 1.00e-04 | lambda_vq 0.150 | train 0.002243 | val 0.001535 | recon 0.000541 | vq 0.006624 | skipped 0
+Epoch 012 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001416 | val 0.001221 | recon 0.000500 | vq 0.004803 | skipped 0
+Epoch 013 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001215 | val 0.001286 | recon 0.000495 | vq 0.005279 | skipped 0
+Epoch 014 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001201 | val 0.001221 | recon 0.000491 | vq 0.004866 | skipped 0
+Epoch 015 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001176 | val 0.001246 | recon 0.000493 | vq 0.005016 | skipped 0
+Epoch 016 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001128 | val 0.001076 | recon 0.000486 | vq 0.003934 | skipped 0
+Epoch 017 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001116 | val 0.001110 | recon 0.000482 | vq 0.004186 | skipped 0
+Epoch 018 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001098 | val 0.001023 | recon 0.000476 | vq 0.003647 | skipped 0
+Epoch 019 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001086 | val 0.001056 | recon 0.000480 | vq 0.003836 | skipped 0
+Epoch 020 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001090 | val 0.001061 | recon 0.000473 | vq 0.003920 | skipped 0
+Epoch 021 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001081 | val 0.001066 | recon 0.000476 | vq 0.003931 | skipped 0
+Epoch 022 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001066 | val 0.001056 | recon 0.000476 | vq 0.003865 | skipped 0
+Epoch 023 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001056 | val 0.001052 | recon 0.000488 | vq 0.003762 | skipped 0
+Epoch 024 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001045 | val 0.001011 | recon 0.000468 | vq 0.003619 | skipped 0
+Epoch 025 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001035 | val 0.001005 | recon 0.000464 | vq 0.003603 | skipped 0
+Epoch 026 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001020 | val 0.000945 | recon 0.000462 | vq 0.003218 | skipped 0
+Epoch 027 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000995 | val 0.000932 | recon 0.000466 | vq 0.003106 | skipped 0
+Epoch 028 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000979 | val 0.000945 | recon 0.000465 | vq 0.003206 | skipped 0
+Epoch 029 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000968 | val 0.000960 | recon 0.000466 | vq 0.003295 | skipped 0
+Epoch 030 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000959 | val 0.000915 | recon 0.000463 | vq 0.003016 | skipped 0
+Epoch 031 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000947 | val 0.000917 | recon 0.000466 | vq 0.003010 | skipped 0
+Epoch 032 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000936 | val 0.000907 | recon 0.000466 | vq 0.002938 | skipped 0
+Epoch 033 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000929 | val 0.000917 | recon 0.000479 | vq 0.002919 | skipped 0
+Epoch 034 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000923 | val 0.000904 | recon 0.000470 | vq 0.002895 | skipped 0
+Epoch 035 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000914 | val 0.000896 | recon 0.000479 | vq 0.002785 | skipped 0
+Epoch 036 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000907 | val 0.000890 | recon 0.000471 | vq 0.002791 | skipped 0
+Epoch 037 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000901 | val 0.000891 | recon 0.000470 | vq 0.002809 | skipped 0
+Epoch 038 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000896 | val 0.000874 | recon 0.000468 | vq 0.002705 | skipped 0
+Epoch 039 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000895 | val 0.000862 | recon 0.000469 | vq 0.002619 | skipped 0
+Epoch 040 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000895 | val 0.000866 | recon 0.000466 | vq 0.002670 | skipped 0
+Epoch 041 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000895 | val 0.000904 | recon 0.000475 | vq 0.002858 | skipped 0
+Epoch 042 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000892 | val 0.000861 | recon 0.000469 | vq 0.002613 | skipped 0
+Epoch 043 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000875 | val 0.000857 | recon 0.000471 | vq 0.002574 | skipped 0
+Epoch 044 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000871 | val 0.000859 | recon 0.000469 | vq 0.002604 | skipped 0
+Epoch 045 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000867 | val 0.000850 | recon 0.000472 | vq 0.002521 | skipped 0
+Epoch 046 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000864 | val 0.000843 | recon 0.000476 | vq 0.002441 | skipped 0
+Epoch 047 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000859 | val 0.000849 | recon 0.000472 | vq 0.002514 | skipped 0
+Epoch 048 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000858 | val 0.000843 | recon 0.000472 | vq 0.002479 | skipped 0
+Epoch 049 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000856 | val 0.000839 | recon 0.000472 | vq 0.002446 | skipped 0
+Epoch 050 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000852 | val 0.000853 | recon 0.000472 | vq 0.002544 | skipped 0
+Epoch 051 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000851 | val 0.000836 | recon 0.000472 | vq 0.002423 | skipped 0
+Epoch 052 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000850 | val 0.000830 | recon 0.000473 | vq 0.002382 | skipped 0
+Epoch 053 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000850 | val 0.000847 | recon 0.000473 | vq 0.002494 | skipped 0
+Epoch 054 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000847 | val 0.000833 | recon 0.000470 | vq 0.002424 | skipped 0
+Epoch 055 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000844 | val 0.000833 | recon 0.000475 | vq 0.002388 | skipped 0
+Epoch 056 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000844 | val 0.000837 | recon 0.000478 | vq 0.002394 | skipped 0
+Epoch 057 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000842 | val 0.000818 | recon 0.000473 | vq 0.002299 | skipped 0
+Epoch 058 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000840 | val 0.000819 | recon 0.000473 | vq 0.002313 | skipped 0
+Epoch 059 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000835 | val 0.000844 | recon 0.000477 | vq 0.002452 | skipped 0
+Epoch 060 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000836 | val 0.000822 | recon 0.000473 | vq 0.002328 | skipped 0
+Epoch 061 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000836 | val 0.000822 | recon 0.000477 | vq 0.002301 | skipped 0
+Epoch 062 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000836 | val 0.000826 | recon 0.000475 | vq 0.002338 | skipped 0
+Epoch 063 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000837 | val 0.000827 | recon 0.000484 | vq 0.002286 | skipped 0
+Epoch 064 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000834 | val 0.000819 | recon 0.000474 | vq 0.002302 | skipped 0
+Epoch 065 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000830 | val 0.000814 | recon 0.000471 | vq 0.002285 | skipped 0
+Epoch 066 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000836 | val 0.000823 | recon 0.000469 | vq 0.002366 | skipped 0
+Epoch 067 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000853 | val 0.000838 | recon 0.000476 | vq 0.002413 | skipped 0
+Epoch 068 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000850 | val 0.000848 | recon 0.000477 | vq 0.002471 | skipped 0
+Epoch 069 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000848 | val 0.000841 | recon 0.000477 | vq 0.002427 | skipped 0
+Epoch 070 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000844 | val 0.000830 | recon 0.000477 | vq 0.002357 | skipped 0
+Epoch 071 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000838 | val 0.000817 | recon 0.000473 | vq 0.002295 | skipped 0
+Epoch 072 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000827 | val 0.000810 | recon 0.000473 | vq 0.002247 | skipped 0
+Epoch 073 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000820 | val 0.000808 | recon 0.000472 | vq 0.002244 | skipped 0
+Epoch 074 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000813 | val 0.000801 | recon 0.000472 | vq 0.002194 | skipped 0
+Epoch 075 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000810 | val 0.000810 | recon 0.000478 | vq 0.002208 | skipped 0
+Epoch 076 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000803 | val 0.000792 | recon 0.000469 | vq 0.002153 | skipped 0
+Epoch 077 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000800 | val 0.000789 | recon 0.000465 | vq 0.002162 | skipped 0
+Epoch 078 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000802 | val 0.000792 | recon 0.000468 | vq 0.002158 | skipped 0
+Epoch 079 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000802 | val 0.000793 | recon 0.000470 | vq 0.002152 | skipped 0
+Epoch 080 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000805 | val 0.000792 | recon 0.000470 | vq 0.002152 | skipped 0
+Epoch 081 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000800 | val 0.000789 | recon 0.000471 | vq 0.002121 | skipped 0
+Epoch 082 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000800 | val 0.000794 | recon 0.000469 | vq 0.002166 | skipped 0
+Epoch 083 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000796 | val 0.000784 | recon 0.000474 | vq 0.002070 | skipped 0
+Epoch 084 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000794 | val 0.000786 | recon 0.000469 | vq 0.002111 | skipped 0
+Traceback (most recent call last):
+  File "/home/kanderso/VQVAE-studies/VQ_VAE.py", line 303, in <module>
+    train_stats = run_epoch(
+  File "/home/kanderso/VQVAE-studies/VQ_VAE.py", line 233, in run_epoch
+    for batch in loader:
+  File "/home/kanderso/venv/lib64/python3.9/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+  File "/home/kanderso/venv/lib64/python3.9/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/kanderso/venv/lib64/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/kanderso/venv/lib64/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/kanderso/VQVAE-studies/Simulacra.py", line 45, in __getitem__
+    clean += get_gaussian(mu,sigma,self.pulse_length)
+  File "/home/kanderso/VQVAE-studies/Simulacra.py", line 9, in get_gaussian
+    return np.exp(a) / (sigma * np.sqrt(2 * np.pi))
+KeyboardInterrupt

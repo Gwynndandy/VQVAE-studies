@@ -1,0 +1,10 @@
+Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.001036 | val 0.000537 | recon 0.000312 | vq 0.015016 | skipped 0
+Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 0.000522 | val 0.000374 | recon 0.000306 | vq 0.002272 | skipped 0
+Epoch 003 | lr 1.00e-04 | lambda_vq 0.045 | train 0.000361 | val 0.000347 | recon 0.000299 | vq 0.001078 | skipped 0
+Epoch 004 | lr 1.00e-04 | lambda_vq 0.060 | train 0.000361 | val 0.000359 | recon 0.000298 | vq 0.001014 | skipped 0
+Epoch 005 | lr 1.00e-04 | lambda_vq 0.075 | train 0.000368 | val 0.000363 | recon 0.000299 | vq 0.000846 | skipped 0
+Epoch 006 | lr 1.00e-04 | lambda_vq 0.090 | train 0.000372 | val 0.000364 | recon 0.000296 | vq 0.000752 | skipped 0
+Epoch 007 | lr 1.00e-04 | lambda_vq 0.105 | train 0.000372 | val 0.000364 | recon 0.000295 | vq 0.000651 | skipped 0
+Epoch 008 | lr 1.00e-04 | lambda_vq 0.120 | train 0.000370 | val 0.000364 | recon 0.000296 | vq 0.000567 | skipped 0
+Epoch 009 | lr 5.00e-05 | lambda_vq 0.135 | train 0.000369 | val 0.000361 | recon 0.000295 | vq 0.000490 | skipped 0
+Epoch 010 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000369 | val 0.000363 | recon 0.000295 | vq 0.000451 | skipped 0

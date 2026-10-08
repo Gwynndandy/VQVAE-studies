@@ -1,0 +1,30 @@
+Epoch 001 | lr 1.00e-04 | lambda_vq 0.015 | train 0.575682 | val 0.257199 | recon 0.003090 | vq 16.940578 | skipped 0
+Epoch 002 | lr 1.00e-04 | lambda_vq 0.030 | train 4.006699 | val 14.064350 | recon 0.008345 | vq 468.533489 | skipped 0
+Epoch 003 | lr 1.00e-04 | lambda_vq 0.045 | train 0.719856 | val 0.072393 | recon 0.003518 | vq 1.530560 | skipped 0
+Epoch 004 | lr 1.00e-04 | lambda_vq 0.060 | train 0.097431 | val 0.055439 | recon 0.003651 | vq 0.863129 | skipped 0
+Epoch 005 | lr 1.00e-04 | lambda_vq 0.075 | train 0.046999 | val 0.017250 | recon 0.001671 | vq 0.207719 | skipped 0
+Epoch 006 | lr 1.00e-04 | lambda_vq 0.090 | train 0.025667 | val 0.013289 | recon 0.003303 | vq 0.110957 | skipped 0
+Epoch 007 | lr 1.00e-04 | lambda_vq 0.105 | train 0.013960 | val 0.009579 | recon 0.000556 | vq 0.085933 | skipped 0
+Epoch 008 | lr 1.00e-04 | lambda_vq 0.120 | train 0.005197 | val 0.004136 | recon 0.000448 | vq 0.030733 | skipped 0
+Epoch 009 | lr 1.00e-04 | lambda_vq 0.135 | train 0.002376 | val 0.002889 | recon 0.000337 | vq 0.018910 | skipped 0
+Epoch 010 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001691 | val 0.001353 | recon 0.000353 | vq 0.006669 | skipped 0
+Epoch 011 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001244 | val 0.001764 | recon 0.000234 | vq 0.010201 | skipped 0
+Epoch 012 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001229 | val 0.000928 | recon 0.000292 | vq 0.004237 | skipped 0
+Epoch 013 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001131 | val 0.001052 | recon 0.000222 | vq 0.005531 | skipped 0
+Epoch 014 | lr 1.00e-04 | lambda_vq 0.150 | train 0.001039 | val 0.000946 | recon 0.000237 | vq 0.004731 | skipped 0
+Epoch 015 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000971 | val 0.001250 | recon 0.000224 | vq 0.006840 | skipped 0
+Epoch 016 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000974 | val 0.001072 | recon 0.000224 | vq 0.005653 | skipped 0
+Epoch 017 | lr 1.00e-04 | lambda_vq 0.150 | train 0.000971 | val 0.001053 | recon 0.000228 | vq 0.005506 | skipped 0
+Epoch 018 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000971 | val 0.000983 | recon 0.000311 | vq 0.004477 | skipped 0
+Epoch 019 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000954 | val 0.001008 | recon 0.000224 | vq 0.005229 | skipped 0
+Epoch 020 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000945 | val 0.001000 | recon 0.000224 | vq 0.005178 | skipped 0
+Epoch 021 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000945 | val 0.001019 | recon 0.000224 | vq 0.005301 | skipped 0
+Epoch 022 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000955 | val 0.001051 | recon 0.000221 | vq 0.005534 | skipped 0
+Epoch 023 | lr 5.00e-05 | lambda_vq 0.150 | train 0.000968 | val 0.001052 | recon 0.000222 | vq 0.005538 | skipped 0
+Epoch 024 | lr 2.50e-05 | lambda_vq 0.150 | train 0.000988 | val 0.001081 | recon 0.000224 | vq 0.005716 | skipped 0
+Epoch 025 | lr 2.50e-05 | lambda_vq 0.150 | train 0.001006 | val 0.001076 | recon 0.000221 | vq 0.005701 | skipped 0
+Epoch 026 | lr 2.50e-05 | lambda_vq 0.150 | train 0.001022 | val 0.001059 | recon 0.000219 | vq 0.005595 | skipped 0
+Epoch 027 | lr 2.50e-05 | lambda_vq 0.150 | train 0.001029 | val 0.001064 | recon 0.000220 | vq 0.005623 | skipped 0
+Early stopping.
+/home/kanderso/venv/lib64/python3.9/site-packages/plotly/matplotlylib/renderer.py:607: UserWarning: I found a path object that I don't think is part of a bar chart. Ignoring.
+  warnings.warn(

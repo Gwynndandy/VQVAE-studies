@@ -3,10 +3,6 @@
 set -e
 
 values=(
-40
-5
-1
-0.5
 0.1
 )
 #hyperperameters=("  'batch_size': " "  'hid': " "  'z_ch': " "  'n_codes': " "  'lr': " "  'weight_decay': " "  'min_lr': ")

@@ -100,7 +100,7 @@ batch["x"].shape, batch["y"].shape
 
 x = batch["x"].to(device)
 y = batch["y"].to(device)
-
+idx=0
 noisy = x[idx, 0].cpu().numpy()
 clean = y[idx, 0].cpu().numpy()
 
