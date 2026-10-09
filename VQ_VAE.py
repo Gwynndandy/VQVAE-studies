@@ -18,6 +18,7 @@ import wandb
 import sys
 import yaml
 import csv
+import re
 
 import Simulacra as sc
 
@@ -128,17 +129,49 @@ class VQVAE1DDenoiser(nn.Module):
         return clean_hat, vq_loss, codes
 
 
+def check_signal(run_path):
+    snr_regex = re.compile(r"(^.*signal.*\.npy)$")
+    matches = snr_regex.search(run_path)
+    if matches is not None:
+        return str(matches.groups()[0])
+    else:
+        return None
+def check_clnsig(run_path):
+    snr_regex = re.compile(r"(^.*clnsig.*\.npy)$")
+    matches = snr_regex.search(run_path)
+    if matches is not None:
+        return str(matches.groups()[0])
+    else:
+        return None
 
+class NoisyToClean1DDataset(Dataset):
+    def __init__(self, noisy, clean, normalize=True):
+        self.noisy = noisy.astype(np.float32)
+        self.clean = clean.astype(np.float32)
+        self.normalize = normalize
+
+    def __len__(self):
+        return len(self.noisy)
+
+    def __getitem__(self, idx):
+        x = self.noisy[idx]   # (1, 512)
+        y = self.clean[idx]   # (1, 512)
+
+        if self.normalize:
+            mu = x.mean()
+            sd = x.std() + 1e-6
+            x = (x - mu) / sd
+            y = (y - mu) / sd
+
+        return {
+            "x": torch.from_numpy(x).float(),
+            "y": torch.from_numpy(y).float(),
+        }
 
 
 if __name__ == "__main__":
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    try:
-        os.chdir("/home/maniacalm/bin/VQVAE_studies")
-    except FileNotFoundError:
-        print("Either filepath is wrong or this is ran on another computer")
-
     yaml_path = sys.argv[1]
     with open(yaml_path, 'r') as file:
         config = yaml.safe_load(file)
@@ -158,6 +191,7 @@ if __name__ == "__main__":
     test_seed = int(config["dataloader"]["test_seed"])
     val_seed = int(config["dataloader"]["val_seed"])
     batch_size = int(config["dataloader"]["batch_size"])
+    data_path  = str(config["dataloader"]["dataset_path"])
 
     #model
     in_ch = int(config["model"]["in_ch"])
@@ -198,14 +232,77 @@ if __name__ == "__main__":
 
     shutil.copy(yaml_path, f"{filepath}/{yaml_path}")
 
-    train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
-    val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
-    test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
+    if target_snr != 0:
+        print(type(target_snr),target_snr)
+        asdf
+        train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
+        val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
+        test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
 
-    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
-    test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
+        train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+        val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
+        test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
+    else:
+        clean_paths = [x.name for x in os.scandir(data_path) if check_clnsig(x.name) is not None]
+        signal_paths = [x.name for x in os.scandir(data_path) if check_signal(x.name) is not None]
+        train_noise = []
+        train_signal = []
+        for cln,sig in zip(clean_paths,signal_paths):
+            a=np.load(sig,allow_pickle=True)
+            c=np.load(cln,allow_pickle=True)
+            nwf=a.size
+            ntcks=len(a[0])-54
+            for j in range(nwf-50):
+                ya=[]
+                yc=[]
+                j=0
+                for i in range(0,ntcks):
+                    lab='tck_'+str(i)
+                    ya.append(a[j][lab])
+                    yc.append(c[j][lab])
+                train_noise.append(ya)
+                train_signal.append(yc)
+            test_noise = []
+            test_signal = []
+            for j in range(nwf-50,nwf-1):
+                ya=[]
+                yc=[]
+                j=0
+                for i in range(0,ntcks):
+                    lab='tck_'+str(i)
+                    ya.append(a[j][lab])
+                    yc.append(c[j][lab])
+            test_noise.append(ya)
+            test_signal.append(yc)
+        train_noise_c = np.reshape(np.array(train_noise), (-1, 1,512))
+        train_signal_c = np.reshape(np.array(train_signal), (-1, 1,512))
+        test_noise_c = np.reshape(np.array(test_noise), (-1, 1,512))
+        test_signal_c = np.reshape(np.array(test_signal), (-1, 1,512))
+        train_ds_full = NoisyToClean1DDataset(
+            noisy=train_noise_c,
+            clean=train_signal_c,
+            normalize=True,
+        )
 
+        test_ds = NoisyToClean1DDataset(
+            noisy=test_noise_c,
+            clean=test_signal_c,
+            normalize=True,
+        )
+
+        n_val = int(0.1 * len(train_ds_full))
+        n_train = len(train_ds_full) - n_val
+
+        train_ds, val_ds = random_split(
+            train_ds_full,
+            [n_train, n_val],
+            generator=torch.Generator().manual_seed(42),
+        )
+
+        train_loader = DataLoader(train_ds, batch_size=64, shuffle=True)
+        val_loader = DataLoader(val_ds, batch_size=64, shuffle=False)
+        test_loader = DataLoader(test_ds, batch_size=64, shuffle=False)
+    
     model = VQVAE1DDenoiser(in_ch, hid, z_ch, n_codes).to(device)
     
     optimizer = torch.optim.AdamW(
@@ -384,7 +481,7 @@ if __name__ == "__main__":
     with torch.no_grad():
         y_hat, vq_loss, codes = model(x)
 
-    for idx in range(5):
+    for idx in range(min(5,len(x))):
         noisy = x[idx, 0].cpu().numpy()
         clean = y[idx, 0].cpu().numpy()
         pred = y_hat[idx, 0].cpu().numpy()

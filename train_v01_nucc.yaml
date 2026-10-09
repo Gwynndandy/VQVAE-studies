@@ -1,5 +1,5 @@
 'dataloader':
-  'target_snr':  15
+  'target_snr': 0 
   'pulse_length':  512
   'training_length':  100000
   'test_length':  1000

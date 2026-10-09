@@ -9,12 +9,12 @@ import matplotlib.pyplot as plt
 import yaml
 import numpy as np
 import copy
+import torch.nn.functional as F
 
 from VQ_VAE import VQVAE1DDenoiser 
 import torch
 from torch.utils.data import Dataset, DataLoader
 import Simulacra as sc
-
 
 from pylatex import (
     Alignat,
@@ -68,7 +68,6 @@ def import_yaml(yaml_path):
     #training
     config["num_epochs"] = int(config_yaml["training"]["num_epochs"])
     return config 
-
 def add_current_plot(path,name,caption):
     name = name.replace(" ", "_")
     name = name.replace(".", ",")
@@ -79,12 +78,11 @@ def add_current_plot(path,name,caption):
         plot.add_image(image_filename, width="120px")
         plot.add_caption(caption)
     plt.clf()
-
 def get_snr(run_path):
     snr_regex = re.compile(r'/SNR:[-+]?([0-9]*\.[0-9]+|[0-9]+)')
     matches = snr_regex.search(run_path)
     if matches is not None:
-        return matches.groups()[0]
+        return float(matches.groups()[0])
     else:
         return None
 def get_id(run_path):
@@ -99,6 +97,15 @@ def get_stats(run_path):
     for i in range(len(header)):
         stats[header[i]] = results[i]
     return stats
+def get_data(target_snr):
+    snr = float(target_snr)
+    test_ds = sc.simulacra_dataset(snr, 32, 10000000, 512)
+    test_loader = DataLoader(test_ds, batch_size=32, shuffle=False)
+    batch = next(iter(test_loader))
+    x = batch["x"]
+    y = batch["y"]
+    return x,y,x[0, 0].cpu().numpy(), y[0, 0].cpu().numpy()
+
 
 if __name__ == "__main__":
     try:
@@ -115,33 +122,77 @@ if __name__ == "__main__":
     runs = sorted(runs,key=get_snr)
     snrs = [get_snr(x) for x in runs]
     sorted_runs= {}
+
     for snr in sorted(set(snrs)):
-        sorted_runs[f"{snr}"] = [run for run in runs if get_snr(run) == snr]
+        sorted_runs[snr] = [run for run in runs if get_snr(run) == snr]
+    
     with doc.create(Section("Plot of Flattops:")):
-        test_ds = sc.simulacra_dataset(float(snr), 32, 10000000, 512)
-        test_loader = DataLoader(test_ds, batch_size=32, shuffle=False)
-        batch = next(iter(test_loader))
-        x = batch["x"]
-        y = batch["y"]
-        noisy = x[0, 0].cpu().numpy()
-        clean = y[0, 0].cpu().numpy()
-        for i,snr in enumerate(snrs):
-            test = []
-            metric = []
+        metrics = {}
+        for snr in sorted(set(snrs)):
+            n_code_temp = []
+            flatness_temp = []
+            loss_temp = []
+            preds = []
+            x,y,_,_ = get_data(snr)
             for run in sorted_runs[snr]:
                 config = import_yaml(f"{run}/batch.yaml")
                 in_ch,hid,z_ch,n_codes = config["in_ch"], config["hid"], config["z_ch"], config["n_codes"]
                 model = VQVAE1DDenoiser(in_ch, hid, z_ch, n_codes)
                 model.load_state_dict(torch.load(f"{run}/model_dict.pth"))
+
                 with torch.no_grad():
                     y_hat, vq_loss, codes = model(x)
                 pred = y_hat[0, 0].cpu().numpy()
                 dy_dx = np.diff(pred)/len(pred)
                 dy2_dx2 = np.diff(dy_dx)/len(dy_dx)
                 integral = sum(dy2_dx2**2)
-                test.append(n_codes)
-                metric.append(integral)
-            plt.scatter(test, metric, label=f"{snr}")
+                recon_loss = F.huber_loss(y_hat, y, delta=0.5).item()
+
+                n_code_temp.append(n_codes)
+                flatness_temp.append(integral)
+                loss_temp.append(recon_loss)
+                preds.append(pred)
+            metrics[snr] = (n_code_temp, flatness_temp, loss_temp, preds)
+
+        fig, ax = plt.subplots(len(metrics.items()), figsize=(10, 10))
+        j = 3
+        for i,metric, in enumerate(metrics.items()):
+            snr = metric[0]
+            n_codes,flatnesses,_,preds = metric[1]
+            [ax[i].plot(pred, label=f"{ncode},{flatness:.2e}", alpha=0.5) for ncode,flatness,pred in zip(n_codes[:j],flatnesses[:j],preds[:j])]
+            ax[i].set_title(f"SNR: {snr}")
+        [(axes.set_ylabel("loss"),axes.set_xlabel("n_codes"),axes.legend()) for axes in ax]
+        add_current_plot(path,f"outputs",f"test")
+        fig, ax = plt.subplots(figsize=(10, 10))
+        for i,metric, in enumerate(metrics.items()):
+            snr = metric[0]
+            n_codes,flatnesses,loss,preds = metric[1]
+            loss_normed = 50*(np.subtract(loss,min(loss)))/(max(loss)-min(loss))+10
+            ax.scatter(n_codes, flatnesses, s=loss_normed, label=f"{snr}" )
+        ax.set_ylabel("N_codes")
+        ax.set_xlabel("Flattness")
+        ax.legend()
         plt.legend()
-        add_current_plot(path,f"comparative plot {snr}",f"test")
+        add_current_plot(path,f"n codes vs flattness scatter",f"test")
+        fig, ax = plt.subplots(2, figsize=(10, 10))
+        for i,metric, in enumerate(metrics.items()):
+            snr = metric[0]
+            n_codes,flatnesses,loss,preds = metric[1]
+            ax[0].scatter(n_codes, np.divide(loss,np.abs(np.log(float(snr)))), label=f"{snr}")
+            ax[1].scatter(n_codes, loss, label=f"{snr}")
+        [(axes.set_ylabel("N_codes"),axes.set_xlabel("Loss"),axes.legend()) for axes in ax]
+        ax[0].set_title("Scaled Loss (loss/snr)")
+        ax[1].set_title("Unscalled Loss")
+        plt.legend()
+        add_current_plot(path,f"n codes vs loss",f"test")
+        fig, ax = plt.subplots(2, figsize=(10, 10))
+        for i,metric, in enumerate(metrics.items()):
+            snr = metric[0]
+            n_codes,flatnesses,loss,preds = metric[1]
+            plot1 = ax[0].scatter(n_codes, np.multiply(flatnesses,float(snr)), label=f"{snr}")
+            plot2 = ax[1].scatter(n_codes, flatnesses, label=f"{snr}")
+        plt.legend()
+        ax[0].set_title("Scaled Flattness (flattness/snr)")
+        ax[1].set_title("Unscalled Flattness")
+        add_current_plot(path,f"n codes vs flatness",f"test")
     doc.generate_pdf("full", clean_tex=False)

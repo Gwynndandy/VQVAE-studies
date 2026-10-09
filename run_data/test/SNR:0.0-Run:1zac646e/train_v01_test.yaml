@@ -1,5 +1,5 @@
 'dataloader':
-  'target_snr':  15
+  'target_snr':  0
   'pulse_length':  512
   'training_length':  100000
   'test_length':  1000
@@ -8,7 +8,7 @@
   'test_seed': 1000000
   'val_seed': 10000000
   'batch_size': 64
-  'dataset_path': "/data/mwang/dunesnb/1dcnn/train_v01/nucc/"
+  'dataset_path': "/home/maniacalm/bin/VQVAE_studies"
 
 'model':
   'in_ch': 1

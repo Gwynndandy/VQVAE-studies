@@ -20,7 +20,8 @@ class simulacra_dataset(Dataset):
             pulse_length (int): The length of samples
         """
         self.target_snr = target_snr
-        self.sigma =(target_snr/5)/2
+        #self.sigma =(target_snr/5)/2
+        self.sigma = target_snr
         self.length = length
         self.seed = seed
         self.pulse_length = pulse_length
@@ -34,7 +35,7 @@ class simulacra_dataset(Dataset):
 
     def __getitem__(self, idx):
         rng.seed(idx+self.seed)
-        target_snr = self.target_snr +  rng.normal(loc=0.0, scale=self.sigma)
+        target_snr = np.abs(self.target_snr +  rng.normal(loc=0.0, scale=self.sigma))
         num_pulse = rng.randint(1,3)
         bool_inverse = [rng.randint(0, 100) > 50 for _ in range(num_pulse)]
 

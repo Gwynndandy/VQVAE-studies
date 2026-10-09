@@ -1,5 +1,5 @@
 'dataloader':
-  'target_snr': 1
+  'target_snr':  15
   'pulse_length':  512
   'training_length':  100000
   'test_length':  1000
@@ -8,12 +8,13 @@
   'test_seed': 1000000
   'val_seed': 10000000
   'batch_size': 64
+  'dataset_path': "/home/maniacalm/bin/VQVAE_studies"
 
 'model':
   'in_ch': 1
   'hid': 32
   'z_ch': 512
-  'n_codes': 24.149
+  'n_codes': 32
 
 'adam':
   'lr': 1e-4
