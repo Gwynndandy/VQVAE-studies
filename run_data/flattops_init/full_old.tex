@@ -1,0 +1,46 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{geometry}%
+\geometry{tmargin=5cm,lmargin=5cm}%
+\usepackage{graphicx}%
+\usepackage{float}
+%
+%
+%
+\begin{document}%
+\normalsize%
+\section{Model Outputs:}%
+\label{sec:PlotofFlattops}%
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{/home/maniacalm/bin/VQVAE_studies/run_data/flattops_init/images/outputs.png}%
+\caption{Outputs for the models for certain SNR datasets}%
+\end{figure}
+%
+Models were trained with synthetic datasets with an SNR around the specified value but with variation of a Gaussian with $\sigma = \frac{snr}{5*2}$. So $95\%$ of the runs in each dataset are within $20\%$ of the snr. In hindsight this is far too precise of datasets for this but for the goal of looking at the performance of n\_codes on model behavior is more of a side note.
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{/home/maniacalm/bin/VQVAE_studies/run_data/flattops_init/images/n_codes_vs_flattness_scatter.png}%
+\caption{Comparison N\_codes and the flattness metric with size denoting the relative loss}%
+\end{figure}
+%
+To measure the flatness seen in other runs a metric was used that should manage to track relative flatness of the outputs \[flattness = \int (f(x))''dx\] with $f(x)$ being the data. The next two plots being the same but for the comparing relative to the loss instead.
+
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{/home/maniacalm/bin/VQVAE_studies/run_data/flattops_init/images/n_codes_vs_loss.png}%
+\end{figure}
+%
+\begin{figure}[H]%
+\centering%
+\includegraphics[width=\textwidth]{/home/maniacalm/bin/VQVAE_studies/run_data/flattops_init/images/n_codes_vs_flatness.png}%
+\end{figure}
+
+While no apparent overall pattern exists across the datasets. For the $snr=40$ dataset we see both flattness and loss drop with n\_codes. For the lower snr runs we see either a decrease or an unchanging effect. The snr of 5 runs had no clear pattern and should be looked at again.
+%
+\end{document}
