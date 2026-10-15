@@ -5,42 +5,7 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from scipy.ndimage import label
 
-with open(yaml_path, 'r') as file:
-    config = yaml.safe_load(file)
-if len(sys.argv) != 3:
-    print("ERROR: invalid number of inputs!")
-    print(f"Please enter: python {sys.argv[0]} YAML_path runpath")
-    sys.exit(1)
-#dataloader
-target_snr = float(config["dataloader"]["target_snr"])
-pulse_length = int(config["dataloader"]["pulse_length"])
-training_length = int(config["dataloader"]["training_length"])
-test_length = int(config["dataloader"]["test_length"])
-val_length = int(config["dataloader"]["val_length"])
-training_seed = int(config["dataloader"]["training_seed"])
-test_seed = int(config["dataloader"]["test_seed"])
-val_seed = int(config["dataloader"]["val_seed"])
-batch_size = int(config["dataloader"]["batch_size"])
-data_path  = str(config["dataloader"]["dataset_path"])
 
-#model
-in_ch = int(config["model"]["in_ch"])
-hid = int(config["model"]["hid"])
-z_ch = int(config["model"]["z_ch"])
-n_codes = int(config["model"]["n_codes"])
-
-#adam
-lr = float(config["adam"]["lr"])
-weight_decay = float(config["adam"]["weight_decay"])
-
-#lr_scheduler
-mode = str(config["lr_scheduler"]["mode"])
-factor = float(config["lr_scheduler"]["factor"])
-patience = int(config["lr_scheduler"]["patience"])
-min_lr = float(config["lr_scheduler"]["min_lr"])
-
-#training
-num_epochs = int(config["training"]["num_epochs"])
 
 
 
@@ -148,6 +113,50 @@ history_vqvae = {
     "val_vq": [],
     "lr": [],
 }
+read_yaml_vqvae():
+    with open(yaml_path, 'r') as file:
+        config = yaml.safe_load(file)
+    if len(sys.argv) != 3:
+        print("ERROR: invalid number of inputs!")
+        print(f"Please enter: python {sys.argv[0]} YAML_path runpath")
+        sys.exit(1)
+    #dataloader
+    target_snr = float(config["dataloader"]["target_snr"])
+    pulse_length = int(config["dataloader"]["pulse_length"])
+    training_length = int(config["dataloader"]["training_length"])
+    test_length = int(config["dataloader"]["test_length"])
+    val_length = int(config["dataloader"]["val_length"])
+    training_seed = int(config["dataloader"]["training_seed"])
+    test_seed = int(config["dataloader"]["test_seed"])
+    val_seed = int(config["dataloader"]["val_seed"])
+    batch_size = int(config["dataloader"]["batch_size"])
+    data_path  = str(config["dataloader"]["dataset_path"])
+
+    #model
+    in_ch = int(config["model"]["in_ch"])
+    hid = int(config["model"]["hid"])
+    z_ch = int(config["model"]["z_ch"])
+    n_codes = int(config["model"]["n_codes"])
+
+    #adam
+    lr = float(config["adam"]["lr"])
+    weight_decay = float(config["adam"]["weight_decay"])
+
+    #lr_scheduler
+    mode = str(config["lr_scheduler"]["mode"])
+    factor = float(config["lr_scheduler"]["factor"])
+    patience = int(config["lr_scheduler"]["patience"])
+    min_lr = float(config["lr_scheduler"]["min_lr"])
+
+    #training
+    num_epochs = int(config["training"]["num_epochs"])
+    return args
+
+get_model(config)
+    model = model(args)
+    optsched = asdflakjds
+
+    return model,op,sched
 
 class autoencoder(nn.Module):
     def __init__(self, ):
@@ -182,17 +191,57 @@ history_autoencoder = {
     "val_loss": [],
     "lr": [],
 }
+read_yaml_autoencoder():
+    with open(yaml_path, 'r') as file:
+        config = yaml.safe_load(file)
+    if len(sys.argv) != 3:
+        print("ERROR: invalid number of inputs!")
+        print(f"Please enter: python {sys.argv[0]} YAML_path runpath")
+        sys.exit(1)
+    #dataloader
+    target_snr = float(config["dataloader"]["target_snr"])
+    pulse_length = int(config["dataloader"]["pulse_length"])
+    training_length = int(config["dataloader"]["training_length"])
+    test_length = int(config["dataloader"]["test_length"])
+    val_length = int(config["dataloader"]["val_length"])
+    training_seed = int(config["dataloader"]["training_seed"])
+    test_seed = int(config["dataloader"]["test_seed"])
+    val_seed = int(config["dataloader"]["val_seed"])
+    batch_size = int(config["dataloader"]["batch_size"])
+    data_path  = str(config["dataloader"]["dataset_path"])
 
+    #model
+    in_ch = int(config["model"]["in_ch"])
+    hid = int(config["model"]["hid"])
+    z_ch = int(config["model"]["z_ch"])
 
-optimizer = torch.optim.AdamW(
-    model.parameters(),
-    lr=lr,
-    weight_decay=weight_decay
-)
-scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-    optimizer,
-    mode=mode,
-    factor=factor,
-    patience=patience,
-    min_lr=min_lr,
-)
+    #adam
+    lr = float(config["adam"]["lr"])
+    weight_decay = float(config["adam"]["weight_decay"])
+
+    #lr_scheduler
+    mode = str(config["lr_scheduler"]["mode"])
+    factor = float(config["lr_scheduler"]["factor"])
+    patience = int(config["lr_scheduler"]["patience"])
+    min_lr = float(config["lr_scheduler"]["min_lr"])
+
+    #training
+    num_epochs = int(config["training"]["num_epochs"])
+    return args
+
+get_autoencoder()
+    model = model(asdfkjh)
+
+    optimizer = torch.optim.AdamW(
+        model.parameters(),
+        lr=lr,
+        weight_decay=weight_decay
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer,
+        mode=mode,
+        factor=factor,
+        patience=patience,
+        min_lr=min_lr,
+    )
+    return mdoelstuff, kwargs

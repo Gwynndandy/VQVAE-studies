@@ -35,3 +35,13 @@ class disciminator(nn.Module):
         x = self.net(x)
         x = self.fc(x)
         return torch.sigmoid(x)
+
+read_yaml_roifinder()
+    returen config
+
+get_roifinder()
+    return model,opt,sched
+
+data_transformation()
+    input same
+    output 1 or 0
