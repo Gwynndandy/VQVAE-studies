@@ -8,6 +8,7 @@
   'test_seed': 0
   'val_seed': 0
   'batch_size': 64
+  'dataset_path': "/home/maniacalm/bin/VQVAE_studies/"
 
 'model':
   'in_ch': 1

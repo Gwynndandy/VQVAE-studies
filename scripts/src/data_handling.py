@@ -1,7 +1,9 @@
-mport numpy as np
+import numpy as np
 import numpy.random as rng
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, DataLoader, random_split
 import torch
+import os
+import glob
 
 def get_gaussian(mu,sigma,pulse_length):
     x = np.arange(pulse_length)
@@ -63,14 +65,14 @@ class simulacra_dataset(Dataset):
             "x": torch.from_numpy(result/normalization_constant).float().unsqueeze(0),
             "y": torch.from_numpy(clean/normalization_constant).float().unsqueeze(0),
         }
-make_sc_ds(asdf):
-    train_ds = sc.simulacra_dataset(target_snr, training_length, training_seed, pulse_length)
-    val_ds = sc.simulacra_dataset(target_snr, val_length, val_seed, pulse_length)
-    test_ds = sc.simulacra_dataset(target_snr, test_length, test_seed, pulse_length)
-    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
-    test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
-    return ds's
+def make_sc_ds(config):
+    train_ds = simulacra_dataset(config["target_snr"], config["training_length"], config["training_seed"], config["pulse_length"])
+    val_ds = simulacra_dataset(config["target_snr"], config["val_length"], config["val_seed"], config["pulse_length"])
+    test_ds = simulacra_dataset(config["target_snr"], config["test_length"], config["test_seed"], config["pulse_length"])
+    train_loader = DataLoader(train_ds, batch_size=config["batch_size"], shuffle=True)
+    val_loader = DataLoader(val_ds, batch_size=config["batch_size"], shuffle=False)
+    test_loader = DataLoader(test_ds, batch_size=config["batch_size"], shuffle=False)
+    return train_loader,val_loader,test_loader
 
 def check_signal(run_path):
     snr_regex = re.compile(r"(^.*signal.*\.npy)$")
@@ -105,54 +107,30 @@ class NoisyToClean1DDataset(Dataset):
             x = (x - mu) / sd
             y = (y - mu) / sd
 
-        return {
-            "x": torch.from_numpy(x).float(),
-            "y": torch.from_numpy(y).float(),
-        }
-npy_ds(data_path):
-    clean_paths = [x.name for x in os.scandir(data_path) if check_clnsig(x.name) is not None]
-    signal_paths = [x.name for x in os.scandir(data_path) if check_signal(x.name) is not None]
-    train_noise = []
-    train_signal = []
-    for cln,sig in zip(clean_paths,signal_paths):
-        a=np.load(sig,allow_pickle=True)
-        c=np.load(cln,allow_pickle=True)
-        nwf=a.size
-        ntcks=len(a[0])-54
-        for j in range(nwf-50):
-            ya=[]
-            yc=[]
-            j=0
-            for i in range(0,ntcks):
-                lab='tck_'+str(i)
-                ya.append(a[j][lab])
-                yc.append(c[j][lab])
-            train_noise.append(ya)
-            train_signal.append(yc)
-        test_noise = []
-        test_signal = []
-        for j in range(nwf-50,nwf-1):
-            ya=[]
-            yc=[]
-            j=0
-            for i in range(0,ntcks):
-                lab='tck_'+str(i)
-                ya.append(a[j][lab])
-                yc.append(c[j][lab])
-        test_noise.append(ya)
-        test_signal.append(yc)
-    train_noise_c = np.reshape(np.array(train_noise), (-1, 1,512))
-    train_signal_c = np.reshape(np.array(train_signal), (-1, 1,512))
-    test_noise_c = np.reshape(np.array(test_noise), (-1, 1,512))
-    test_signal_c = np.reshape(np.array(test_signal), (-1, 1,512))
+        if isinstance(y, (np.ndarray)):
+            return {
+                "x": torch.from_numpy(x).float().unsqueeze(0),
+                "y": torch.from_numpy(y).float().unsqueeze(0),
+            }
+        else:
+            return {
+                "x": torch.from_numpy(x).float().unsqueeze(0),
+                "y": torch.tensor(y).float().unsqueeze(0),
+            }
+
+def npy_ds(x_train_path,y_train_path,x_test_path,y_test_path):
+    x_train=np.load(x_train_path,allow_pickle=True)
+    y_train=np.load(y_train_path,allow_pickle=True)
+    x_test=np.load(x_test_path,allow_pickle=True)
+    y_test=np.load(y_test_path,allow_pickle=True)
     train_ds_full = NoisyToClean1DDataset(
-        noisy=train_noise_c,
-        clean=train_signal_c,
+        noisy=x_train,
+        clean=y_train,
         normalize=True,
     )
     test_ds = NoisyToClean1DDataset(
-        noisy=test_noise_c,
-        clean=test_signal_c,
+        noisy=x_test,
+        clean=y_test,
         normalize=True,
     )
     n_val = int(0.1 * len(train_ds_full))
@@ -165,6 +143,14 @@ npy_ds(data_path):
     train_loader = DataLoader(train_ds, batch_size=64, shuffle=True)
     val_loader = DataLoader(val_ds, batch_size=64, shuffle=False)
     test_loader = DataLoader(test_ds, batch_size=64, shuffle=False)
-    retrun ds
+    return train_loader,val_loader,test_loader
 
+def make_np_ds(config,type):
+    dataset_path = config["dataset_path"]
+    noise_train_path = glob.glob(os.path.join(dataset_path, "*x_train_U.npy"))[0]
+    noise_test_path = glob.glob(os.path.join(dataset_path, "*x_test_U.npy"))[0]
+    sig_train_path = glob.glob(os.path.join(dataset_path, "*y_train_" + type + "_U.npy"))[0]
+    sig_test_path = glob.glob(os.path.join(dataset_path, "*y_test_" + type + "_U.npy"))[0]
+    train_loader,val_loader,test_loader = npy_ds(noise_train_path,sig_train_path,noise_test_path,sig_test_path)
+    return train_loader,val_loader,test_loader
 
